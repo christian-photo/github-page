@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Scalar API Reference</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+      /* Custom CSS */
+      
+      .parameter-item-trigger[data-v-2b6dfab9] {
+        display:flex;
+        align-items:baseline;
+        height: 50px;
+        gap:6px;
+        flex-wrap:wrap;
+        padding:12px 0;
+        outline:none
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- Load the Script -->
+    <script src="https://cdn.jsdelivr.net/npm/@scalar/api-reference"></script>
+
+    <!-- Initialize the Scalar API Reference -->
+    <script type="text/javascript">
+      Scalar.createApiReference('#app', {
+        "_integration": "svelte",
+        "url": "/sveltekit-github-pages/_app/immutable/assets/websocket_spec.JwvlgXIY.yaml",
+        "hideTestRequestButton": true,
+        "hideClientButton": true,
+        "hideDownloadButton": false,
+        "defaultHttpClient": {
+          "targetKey": "python",
+          "clientKey": "python"
+        },
+        "telemetry": false,
+        "theme": "deepSpace",
+        "customCss": ".parameter-item-trigger[data-v-2b6dfab9] {\n  display:flex;\n  align-items:baseline;\n  height: 50px;\n  gap:6px;\n  flex-wrap:wrap;\n  padding:12px 0;\n  outline:none\n}"})
+    </script>
+  </body>
+</html>
