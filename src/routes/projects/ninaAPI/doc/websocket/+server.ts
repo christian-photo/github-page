@@ -2,6 +2,8 @@ import spec from '$lib/assets/websocket_spec.yaml';
 import { ScalarApiReference } from '@scalar/sveltekit';
 import type { RequestHandler } from './$types';
 
+export const prerender = true;
+
 const render = ScalarApiReference({
 	url: spec,
 	hideTestRequestButton: true,
