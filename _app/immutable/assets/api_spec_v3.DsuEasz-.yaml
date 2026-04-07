@@ -4857,8 +4857,6 @@ components:
         enum:
           - JPEG
           - PNG
-          - AVIF
-          - JXL
         default: JPEG
     ImageQuality:
       name: quality
