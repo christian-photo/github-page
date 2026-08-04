@@ -1,6 +1,7 @@
 import spec from '$lib/assets/api_spec_v3.yaml';
 import { ScalarApiReference } from '@scalar/sveltekit';
 import type { RequestHandler } from './$types';
+import { redirect } from '@sveltejs/kit';
 
 export const prerender = true;
 
@@ -24,5 +25,6 @@ const render = ScalarApiReference({
 });
 
 export const GET: RequestHandler = () => {
-	return render();
+	redirect(302, '/projects/ninaAPI/v3/doc/api/beta');
+	// return render();
 };
