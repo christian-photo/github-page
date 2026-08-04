@@ -25,6 +25,6 @@ const render = ScalarApiReference({
 });
 
 export const GET: RequestHandler = () => {
-	redirect(302, '/projects/ninaAPI/v3/doc/api/beta');
+	redirect(302, '/github-page/projects/ninaAPI/v3/doc/api/beta');
 	// return render();
 };
